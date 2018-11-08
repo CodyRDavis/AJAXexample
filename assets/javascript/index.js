@@ -38,7 +38,7 @@ function createTermButton(){
     console.log(searchTerm);
     search.value = "";
 
-    if(searchTerm != null){ //validate user input. dont want blank inputs.
+    if(searchTerm != ""){ //validate user input. dont want blank inputs.
         //creating new element and posting it
         var searchedItem = document.createElement('span');
             //searchedItem.setAttribute('class', "button-searchHistory");
