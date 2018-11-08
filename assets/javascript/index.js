@@ -1,6 +1,6 @@
 //listening for the search button to be clicked, get the data, and create a new button on the screen of terms the user has or wants to search later.
 document.getElementById('buttonSearch').addEventListener('click', function(event){
-    event.preventDefault();
+ /*    event.preventDefault();
     //variables for paths for ease and readability of code
     var search = document.getElementById('searchTerm');
     var searchHistory = document.getElementById('searchHistory');
@@ -17,9 +17,39 @@ document.getElementById('buttonSearch').addEventListener('click', function(event
     searchedItem.setAttribute('data-name', searchTerm);
     searchedItem.textContent = "#"+searchTerm;
 
-    searchHistory.append(searchedItem);
+    searchHistory.append(searchedItem); */
+    createTermButton();
 });
 
+document.addEventListener('keydown', function(event){
+    if(13 == event.keyCode) {
+        createTermButton();
+    }
+});
+//creates the button that shows up on the aside with the searchbox text.
+function createTermButton(){
+
+    //variables for paths for ease and readability of code
+    var search = document.getElementById('searchTerm');
+    var searchHistory = document.getElementById('searchHistory');
+
+    //getting the search value and clearing out search bar
+    var searchTerm = search.value;
+    console.log(searchTerm);
+    search.value = "";
+
+    if(searchTerm != null){ //validate user input. dont want blank inputs.
+        //creating new element and posting it
+        var searchedItem = document.createElement('span');
+            //searchedItem.setAttribute('class', "button-searchHistory");
+        searchedItem.addEventListener('click', getGif);
+        searchedItem.setAttribute('data-name', searchTerm);
+        searchedItem.textContent = "#"+searchTerm;
+
+        searchHistory.append(searchedItem);  
+    }
+    
+};
 //functions to work as the mouse 'hover' swaps the attributes so that gifs only play when hovered over.
 function gifAnimate(){
     this.setAttribute('src', this.attributes.dataMovingURL.value);
