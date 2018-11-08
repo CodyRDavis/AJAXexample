@@ -61,7 +61,7 @@ function gifStill(){
 //function used to get the gifs and populate them to the screen
 function getGif(){
     searchTerm = this.getAttribute('data-name');
-    var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=gcSmR9mT3vJr69zLe0vQDZIHeY0mFux4&limit=5");
+    var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=gcSmR9mT3vJr69zLe0vQDZIHeY0mFux4&limit=5");
     xhr.done(function(response) {
 
         for (var i = 0; i< response.data.length; i++){ //repeats for each of the responses we get from GIPHY.
