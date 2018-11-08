@@ -1,0 +1,60 @@
+body{
+    background: #660070; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #660070 0%, #1900bc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #660070 0%,#1900bc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #660070 0%,#1900bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660070', endColorstr='#1900bc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/*NavBar */
+.pill {
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 999px;
+    padding: 8px;
+    color: white;
+    display: flex;
+    float:right;
+}
+
+.pill input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.nav-search {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.nav-wrapper{
+    background-color: transparent;
+}
+
+/*Content */
+.wrapper {
+    margin-top: 100px;
+    color: white;
+}
+section{
+    margin-left: 16px;
+    color: white;
+    padding: 16px;
+}
+
+aside {
+    max-width: 250px;
+    padding: 16px;
+    color: white;
+}
+
+aside span {
+    margin: 8px;
+}
