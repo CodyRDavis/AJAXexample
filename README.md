@@ -13,4 +13,7 @@ At the top right is a search bar to allow users to search for Gifs of their desi
 
 ## Room for improvement
 
-I did not stray far from the example given in class for this assignment. instead focusing on doing a few interface things I had never done before. A few UI features are a little underpolished and could use a revist. but most importantly, I would like to revisit what happens when the enter button or search button is pressed. In addition to creating the button, I feel as though a query for 5 gifs using that word should happen automatically and then the users new button can be used to pull up images again if desires. I think the original pitch from the HW demonstrates poor UX/UI choices, but as this was a push into using APIs thats where effort was mostly spent. 
+I did not stray far from the example given in class for this assignment. instead focusing on doing a few interface things I had never done before. A few UI features are a little underpolished and could use a revist. but most importantly, ~~I would like to revisit what happens when the enter button or search button is pressed. In addition to creating the button, I feel as though a query for 5 gifs using that word should happen automatically and then the users new button can be used to pull up images again if desires.~~
+
+update: 08NOV18 20:09
+went ahead and quickly created a function that would when the user searches for a Giph, return the results, and create a historical button that can be clicked to make the call over and over again. I think this is a better UX/UI experiance for the user and more in line with their expecatations when utilizing an app like this.
