@@ -48,6 +48,9 @@ section{
     color: white;
     padding: 16px;
 }
+section img{
+    margin: 8px;
+}
 
 aside {
     max-width: 250px;
@@ -57,4 +60,9 @@ aside {
 
 aside span {
     margin: 8px;
+    text-decoration: underline overline;
+}
+aside span:hover{
+    text-decoration: line-through;
+    cursor: pointer;
 }
